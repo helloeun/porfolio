@@ -1,0 +1,55 @@
+.blind {
+    position: absolute;
+    top: 0; left: 0;
+    overflow: hidden;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+    width: 1px; height: 1px;
+}
+
+.sp_bg {
+    background-image: url(../images/sprite.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+}
+
+.sp_bg1 {
+    background-image: url(../images/sprite1.png);
+    background-repeat: no-repeat;
+    background-size: 180px;
+}
+
+.sc_visual .tab_nav .news::before,
+.sc_visual .tab_nav .part::before {
+    background-image: url(../images/sprite5.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+}
+
+.sc_service .ico_ser01::before,
+.sc_service .ico_ser02::before,
+.sc_service .ico_ser03::before,
+.sc_service .ico_ser04::before,
+.sc_service .ico_ser05::before,
+.sc_service .ico_ser06::before,
+.sc_service .ico_ser07::before,
+.sc_service .ico_ser08::before,
+.sc_service .ico_ser09::before,
+.sc_service .ico_ser10::before,
+.sc_service .ico_ser11::before {
+    background-image: url(../images/sprite2.png);
+    background-repeat: no-repeat;
+    background-size: 1140px;
+}
+
+.sp_bg3 {
+    background-image: url(../images/sprite3.png);
+    background-repeat: no-repeat;
+    background-size: 280px;
+}
+
+.sp_bg4 {
+    background-image: url(../images/sprite4.png);
+    background-repeat: no-repeat;
+    background-size: 175px;
+}

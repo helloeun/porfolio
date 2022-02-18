@@ -1,0 +1,297 @@
+@import 'reset.css';
+@import 'common.css';
+
+/* 영문폰트 font-family: 'Didot',sans-serif; */
+
+@font-face {
+    font-family: 'Didot';
+    src: url('../font/DidotLTStd-Bold.eot'),
+        url('../font/DidotLTStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/DidotLTStd-Bold.svg#DidotLTStd-Bold') format('svg'),
+        url('../font/DidotLTStd-Bold.ttf') format('truetype'),
+        url('../font/DidotLTStd-Bold.woff') format('woff'),
+        url('../font/DidotLTStd-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Didot';
+    src: url('../font/Didot Medium.eot'),
+        url('../font/Didot Medium.eot?#iefix') format('embedded-opentype'),
+        url('../font/Didot Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Didot';
+    src: url('../font/Didot-HTF-M96-Medium.svg#Didot-HTF-M96-Medium') format('svg'),
+        url('../font/Didot-HTF-M96-Medium.ttf') format('truetype'),
+        url('../font/Didot-HTF-M96-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Didot';
+    src: url('../font/Didot Regular.eot'),
+        url('../font/Didot Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/Didot Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Didot';
+    src: url('../font/Didot.svg#Didot') format('svg'),
+        url('../font/Didot.ttf') format('truetype'),
+        url('../font/Didot.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/* body */
+body {
+    /* min-width: 1200px; */
+}
+
+.wrapper {
+    background: #eff4e7;
+    position: relative;
+    z-index: 1;
+}
+.inner {
+    max-width: 1510px;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+/* body:not(.sc_home) { 
+     background: #eff4e7;
+} */
+
+.sc_home,
+footer {
+    background: #fff;
+}
+
+
+/* header */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: #111;
+    z-index: 20;
+}
+
+.header_area {
+    padding: 0 50px;
+    height: 160px;
+    font-family: 'Didot', sans-serif;
+    font-weight: 700;
+}
+
+.header_area .gnb_area {}
+
+.header_area .gnb_area nav {
+    height: 160px;
+}
+
+.header_area .gnb_area nav ul {
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.header_area .gnb_area nav ul li {
+    margin-left: 27px;
+}
+
+.header_area .gnb_area nav ul li a {
+    font-size: 18px;
+    padding: 10px 14px;
+    display: block;
+    overflow: hidden;
+    /* border: 1px solid #000; */
+}
+
+
+.header_area .gnb_area nav ul li a span {
+    position: relative;
+    display: block;
+    transition: transform 0.2s;
+}
+
+.header_area .gnb_area nav ul li a span::before {
+    content: attr(data-hover);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    left: 0;
+    padding-top: 10px;
+}
+
+.header_area .gnb_area nav ul li a span:hover {
+    transform: translateY(-31px);
+    /* a 패딩위아래 10+10 이랑 before패딩 10 = 30px */
+    color: #c50d1f;
+}
+
+.gnb_area .top,
+.gnb_area .bottom {
+    display: none;
+}
+
+/* footer */
+
+footer {
+    font-size: 40px;
+    letter-spacing: -2.5px;
+    line-height: 60px;
+    padding-top: 100px;
+    font-weight: 300;
+    padding-bottom: 300px;
+    color: #717171;
+    
+}
+
+.footer_wrap span {
+    display: block;
+}
+
+footer .inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer_wrap2 {
+    align-self: flex-end;
+    font-size: 19px;
+    letter-spacing: normal;
+}
+
+
+@media screen and (max-width: 1510px) {}
+
+
+@media screen and (max-width: 1024px) {}
+
+
+@media screen and (max-width: 768px) {
+
+    .gnb_area .top,
+    .gnb_area .bottom {
+        display: block;
+    }
+    
+    .gnb_area {
+        position: relative;
+    }
+
+    .gnb_area .close {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 30px; right: 30px;
+        z-index: 12;
+    }
+    .gnb_area i {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #c50d1f;
+        transition: 0.25s;
+    }
+
+    .gnb_area i.top {
+        position: absolute;
+        top: 33.33333%; left: 0;
+    }
+    .gnb_area i.bottom {
+        position: absolute;
+        top: 66.66666%; left: 0;
+    }
+
+    .gnb_area i.top.on {
+        transform: translateY(-50%) rotate(45deg);
+        top: 50%;
+    }
+    .gnb_area i.bottom.on {
+        transform: translateY(-50%) rotate(-45deg);
+        top: 50%;
+    }
+    
+
+    .header_area {
+        padding: 0;
+    }
+
+    .header_area .gnb_area nav {
+        position: fixed;
+        top: 0; left: -100%;
+        width: 100%;
+        height: 100vh;
+        z-index: 11;
+        transition: left 0.35s;
+    }
+
+    .header_area .gnb_area nav.on {
+        left: 0;
+    }
+
+    .header_area .gnb_area nav ul {
+        
+        width: 100%;
+        height: 100%;
+        display: block;
+        align-items: flex-start;
+        padding-top: 140px;
+        background: #100f06;
+    }
+
+    .header_area .gnb_area nav ul li a {
+        color: #DCDCDC;
+        padding: 20px 14px;
+    }
+
+    .header_area .gnb_area nav ul li a span::before {
+        display: none;
+    }
+
+    .header_area .gnb_area nav ul li a span:hover {
+        transform: translateY(0);
+        color: #DCDCDC;
+    }
+
+    .header_area .gnb_area nav ul li:nth-child(1) a {
+        color: #c50d1f;
+    }
+
+    footer {
+        padding: 50px 0;
+    }
+    
+    footer,
+    footer .footer_wrap2 {
+        font-size: 12px;
+        letter-spacing: normal;
+        line-height: 30px;
+    }
+    footer .inner {
+        flex-direction: column;
+    }
+
+    footer .footer_wrap2 {
+        align-self: flex-start;
+    }
+
+}
