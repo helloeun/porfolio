@@ -126,8 +126,8 @@
     left: 0;
     background: #fff;
 
-    background: url(../images/home_bg.png) no-repeat;
-    background-size: 60%;
+    /* background: url(../images/home_bg.png) no-repeat;
+    background-size: 40%; */
 }
 
 /* 대표 타이틀 효과 */
