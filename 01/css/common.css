@@ -17,7 +17,9 @@ header .gnb_area ul.gnb li .tv.green::before,
 #sc_cast .cast_title .title_right .set::before,
 .right_wrap #sc_login .login_link .link_left .link_id::before,
 .right_wrap #sc_login .login_link .link_right::before,
-footer .notice_area .service::after {
+footer .notice_area .service::after,
+header .gnb_area .weather .left span.exp::before,
+header .gnb_area .weather .right span.exp::before {
     background-image: url(../images/sp_bg.png);
     background-repeat: no-repeat;
     background-size: 444px;

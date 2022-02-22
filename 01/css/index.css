@@ -150,12 +150,22 @@ header .gnb_area {
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
     border-top: 1px solid #e4e8eb;
 }
-header nav {
+header .gnb_wrap {
     width: 1130px;
     margin: 0 auto;
 }
+header .gnb_wrap::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+header nav {
+    width: calc(100% - 270px);
+    float: left;
+}
 header .gnb_area ul.gnb {
-    padding: 11px 270px 11px 0;
+    /* padding: 11px 270px 11px 0; */
+    padding: 11px 0 11px 0;
     overflow: hidden;
 }
 header .gnb_area ul.gnb li {
@@ -228,6 +238,62 @@ header .gnb_area ul.gnb li .more::after {
     content: '';
     margin-left: 7px;
     vertical-align: 2px;
+}
+
+header .gnb_area .weather {
+    overflow: hidden;
+    width: 270px;
+    padding: 17px 0 16px;
+}
+header .gnb_area .weather > a {
+    display: block;
+    width: 100%; height: 100%;
+    overflow: hidden;
+}
+header .gnb_area .weather .left {
+    float: left;
+}
+header .gnb_area .weather .left::after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: #e4e8eb;
+    margin: 0 10px;
+    vertical-align: -1px;
+}
+header .gnb_area .weather .left span.exp,
+header .gnb_area .weather .right span.exp {
+    font-size: 13px;
+    font-weight: 700;
+}
+header .gnb_area .weather .left span.exp::before,
+header .gnb_area .weather .right span.exp::before {
+    background-position: -109px -396px;
+    display: inline-block;
+    content: '';
+    width: 18px; height: 18px;
+    vertical-align: top;
+    margin: 0 6px 0 3px;
+}
+
+
+header .gnb_area .weather .right {
+    float: left;
+}
+
+header .gnb_area .weather .local {
+    float: left;
+    display: block;
+    padding-left: 9px;
+    font-size: 12px;
+    color: grey;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:1;
+    overflow:hidden;
+    display: -webkit-box;
+    width: 70px;
 }
 
 /* main */

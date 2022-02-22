@@ -7,7 +7,10 @@
     width: 1px; height: 1px;
 }
 
-.sp_bg {
+.sp_bg,.sc_new .go::after,
+.hi_control .btn.next,
+.hi_control .btn.prev,
+.hi_control .hi_play a {
     background-image: url(../images/sprite.png);
     background-repeat: no-repeat;
     background-size: 300px;
@@ -19,8 +22,8 @@
     background-size: 180px;
 }
 
-.sc_visual .tab_nav .news::before,
-.sc_visual .tab_nav .part::before {
+.slide_content h3 a::before,
+.slide_content2 h3 a::before {
     background-image: url(../images/sprite5.png);
     background-repeat: no-repeat;
     background-size: 300px;
