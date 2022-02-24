@@ -5,21 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>랜딩</title>
+    <title>kwonjieun</title>
+    <!-- layout css-->
     <link rel="stylesheet" href="css/layout.css">
+    <!-- index css -->
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
+    <!-- cursor -->
     <div class="cursor"></div>
 
     <div class="container">
 
-        <!-- <span></span> -->
-
+    <!-- header -->
         <header>
             <div class="header_area">
-                <h1><a href="#"><span class="blind">랜딩페이지</span></a></h1>
+                <h1><a href="#"><span class="blind">kwonjieun</span></a></h1>
                 <div class="gnb_area">
                     <a href="#" class="close"><span class="blind">닫기</span>
                         <i class="top"></i>
@@ -27,32 +29,32 @@
                     </a>
                     <nav>
                         <ul class="gnb">
-                            <li><a href="#"><span data-hover="Home">Home</span></a></li>
+                            <li><a href="#home"><span data-hover="Home">Home</span></a></li>
                             <li><a href="#">Portfolio</a>
-                                <ul class="sub_gnb">
-                                    <li><a href="#naver">네이버</a></li>
-                                    <li><a href="#seoul">서울시청</a></li>
-                                    <li><a href="#oera">오에라</a></li>
-                                    <li><a href="#prada">프라다</a></li>
-                                    <li><a href="#sk2">에스케이II</a></li>        
-                                </ul>
+                                    <ul class="sub_gnb">
+                                        <li><a href="#naver">네이버</a></li>
+                                        <li><a href="#seoul">서울시청</a></li>
+                                        <li><a href="#oera">오에라</a></li>
+                                        <li><a href="#prada">프라다</a></li>
+                                        <li><a href="#sk2">에스케이II</a></li>        
+                                    </ul>
                             </li>
-                            <li><a href="#"><span data-hover="Contact">Contact</span></a></li>
+                            <li><a href="#contact"><span data-hover="Contact">Contact</span></a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
 
+    <!-- main -->
         <main>
 
-            <div class="sc_home">
+            <div class="sc_home" id="home">
                 <div class="wrap">
 
                     <div class="txt_wrap">
                         <h2 class="title">Art of<span>Portfolio</span></h2>
     
-                        <!-- bg -->
                         <h2 class="title txt01">
                             <div>
                                 Art of<span>Portfolio</span>
@@ -61,7 +63,7 @@
                     </div>
 
 
-                    <div class="sc_intro">
+                    <div class="intro">
                         <p class="eng">
                             The fastest way to change yourself is to<br>
                             hang out with people who are already the way you want to be.
@@ -76,8 +78,6 @@
                         </p>
                     </div>
                 </div>
-
-                <!-- <div class="bg"></div> -->
                 
             </div>
             
@@ -88,25 +88,24 @@
                         <h2 class="title" data-title="NAVER">NAVER</h2>
                         <div class="left_wrap">
                             <a href="01/index.html" target="_blank" title="새창열림">
-                                <img src="images/all01.png" alt="네이버">
+                                <img src="images/all01.png" alt="네이버 메인스크린샷">
                             </a>
                         </div>
                         <div class="right_wrap">
-                            <img src="images/short01.png" alt="이미지"> <!-- pc버전만 있으니 pc 이미지만 2개 -->
+                            <img src="images/short01.png" alt="네이버 회사이미지">
                             <div class="bottom_wrap">
                                 <strong>네이버 메인페이지 - PC버전</strong>
                                 <em>[ 제작 기간 - 5day ]</em>
                                 <p>
-                                    네이버 메인 홈페이지의 단순한 외형만을 코딩하는게 아닌 <br>
-    
-                                    보이지않는 제목들에게 css로 blind처리하여 웹접근성을 고려하였고<br>
-                                    스프라이트 이미지를 이용하는 등<br>
-                                    디테일한 부분까지 분석해서 코딩하였습니다.
+                                    네이버 메인 홈페이지의 단순한 외형만을 코딩하는게 아닌
+                                    보이지않는 제목들에게 css로 blind처리하여 웹접근성을 고려하였고,
+                                    웹 표준에 맞추어 시멘틱 태그로 마크업 하였습니다.
+                                    또한 스프라이트 이미지를 이용하는 등 디테일한 부분까지 분석하여 탐구하였습니다.
                                 </p>
                                 <em>[ detail 요소 ]</em>
                                 <p>
+                                - 웹 표준에 맞추어 시멘틱 마크업 작성 <br>
                                 - 마우스오버 시 transform: scale 이벤트 <br>
-                                - jquery로 뉴스스탠드 Tab menu 기능 구현 <br>
                                 - sprite image 사용하여 이미지 용량 최소화
                                 </p>
                             </div>
@@ -118,18 +117,18 @@
                         <h2 class="title">Seoul City Hall</h2>
                         <div class="left_wrap">
                             <a href="02/index.html" target="_blank" title="새창열림">
-                                <img src="images/all02.png" alt="서울시청">
+                                <img src="images/all02.png" alt="서울시청 메인스크린샷">
                             </a>
                         </div>
                         <div class="right_wrap">
-                            <img src="images/short02.png" alt="이미지"> <!-- pc버전만 있으니 pc 이미지만 2개 -->
+                            <img src="images/short02.png" alt="서울">
                             <div class="bottom_wrap">
                                 <strong>서울시청 메인페이지 - PC버전</strong>
                                 <em>[ 제작 기간 - 7day ]</em>
                                 <p>
-                                    서울시청 메인 홈페이지의 단순한 외형만을 코딩하는게 아닌 <br>
-    
-                                    웹접근성을 고려하여 jquery로 keydown 이벤트를 넣어주었고 <br>
+                                    서울시청 메인 홈페이지의 단순한 외형만을 코딩하는게 아닌
+                                    웹접근성을 고려하여 하단 메뉴에 jquery로 keydown 이벤트를 넣어주었고,
+                                    배너 영역 또한 스크린 리더기로 읽었을 때 차례대로 읽힐 수 있도록 분석하여 마크업 하였습니다.
                                     모든 메뉴가 tab으로 접근할 수 있도록 마크업하였습니다.
                                 </p>
                                 <em>[ detail 요소 ]</em>
@@ -147,7 +146,7 @@
                         <h2 class="title" data-title="OERA">OERA</h2>
                         <div class="left_wrap">
                             <a href="03/index.html" target="_blank" title="새창열림">
-                                <img src="images/all03.jpg" alt="오에라 전체사진">
+                                <img src="images/all03.jpg" alt="오에라 메인스크린샷">
                             </a>
                         </div>
                         <div class="right_wrap">
@@ -175,7 +174,7 @@
                         <h2 class="title" data-title="PRADA">PRADA</span></h2>
                         <div class="left_wrap">
                             <a href="04/index.html" target="_blank" title="새창열림">
-                                <img src="images/all04.jpg" alt="프라다 전체사진">
+                                <img src="images/all04.jpg" alt="프라다 메인스크린샷">
                             </a>
                         </div>
                         <div class="right_wrap">
@@ -185,8 +184,8 @@
                                 <em>[ 제작 기간 - 6day ]</em>
                                 <p>
                                     프라다의 메인 페이지를 반응형으로 리뉴얼하였습니다.<br>
-                                    모바일 320px 까지 화면이 보장됩니다. <br>
-                                    swiper 프로그래스바가 슬라이드가 넘어가는 시간에 맞춰서 <br>
+                                    모바일 320px 까지 화면이 보장됩니다.<br>
+                                    swiper 프로그래스바가 슬라이드가 넘어가는 시간에 맞춰서
                                     0 퍼센트에서 100 퍼센트까지 올라갑니다.
                                 </p>
                                 <em>[ detail 요소 ]</em>
@@ -200,11 +199,11 @@
                     </div> <!-- 프라다-->
     
     
-                    <div class="sc_port5 motion1" id="sk2">
+                    <div class="sc_port5 motion" id="sk2">
                         <h2 class="title" data-title="SK-II">SK-II</span></h2>
                         <div class="left_wrap">
                             <a href="05/index.html" target="_blank" title="새창열림">
-                                <img src="images/all05.png" alt="SK2 전체사진">
+                                <img src="images/all05.png" alt="SK2 메인스크린샷">
                             </a>
                         </div>
                         <div class="right_wrap">
@@ -231,15 +230,14 @@
                 </div>
             </div>
 
-
         </main>
 
-        <footer>
+    <!-- footer -->
+        <footer id="contact">
 
             <div class="inner">
 
                 <div class="footer_wrap">
-                    <!-- <span>Swissdent is exclusively</span>-->
                     <h3>Contact</h3>
                     <span>kakao : writer94</span>
                     <a href="mailto:ed86@daum.net">mail : ed86@daum.net</a>
@@ -259,8 +257,6 @@
 
     <!-- jquery cdn -->
     <script src="js/jquery-1.12.4.min.js"></script>
-    <!-- swiper -->
-    <script src="js/swiper-bundle.min.js"></script>
     <!-- gsap -->
     <script src="js/gsap.min.js"></script>
     <!-- gsap 스크롤 -->
